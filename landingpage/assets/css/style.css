@@ -9,6 +9,10 @@ body{
 
 }
 
+a{
+    text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
 }
@@ -48,11 +52,66 @@ h6{
 }
 
 .maincontent{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 3rem
 }
 
 .section{
     min-height: 100vh;
+}
+
+.menu{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    border-bottom: 0.1rem solid #eeeeee;
+}
+
+.menucontent{
+    display: flex;
+    justify-content: space-between; 
+    padding-bottom: 0;
+    padding-top: 0;
+    align-items: center;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    width: 0;
+    height: 0.2rem;
+    background: crimson;
+    transition: all 0.3s ease-in-out;
+}
+.menu ul li a:hover::after{
+    width: 100%;
+}
+
+.menu h1{
+    font-size: 2.3rem;
+    color: #0e1843;
+}
+
+.menu h1 a{
+    color: inherit;
+
 }
