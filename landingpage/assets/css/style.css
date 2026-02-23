@@ -8,6 +8,9 @@ body{
     font-size: 2rem;
 
 }
+p{
+    margin-bottom: 3rem;
+}
 
 a{
     text-decoration: none;
@@ -18,6 +21,7 @@ h1, h2, h3, h4, h5, h6{
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -69,6 +73,7 @@ h6{
     width: 100%;
     right: 0;
     border-bottom: 0.1rem solid #eeeeee;
+    z-index: 100;
 }
 
 .menucontent{
@@ -114,4 +119,45 @@ h6{
 .menu h1 a{
     color: inherit;
 
+}
+
+.introcontent{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    align-items: center;
+    height: 100vh;
+}
+
+.introtext, .introimg {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.introtext h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+.introimg img,
+.introimg svg {
+  max-width: 100%;
+  height: auto;
+}
+
+#skills {
+    color: #0e1843;
+}
+
+
+
+.skillscontent{
+    max-width: 80rem;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+   
 }
